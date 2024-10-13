@@ -50,3 +50,37 @@
 </html>
 
 
+
+
+<style>
+    .image-link {
+        display: inline-block;
+        width: 300px; /* Ajusta el tamaño según sea necesario */
+        height: 200px; /* Ajusta el tamaño según sea necesario */
+        overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+        position: fixed; /* Cambiado a posición fija */
+        bottom: 20px; /* Alineado 20px desde abajo */
+        right:-150px;
+        z-index: 5; /* Añadido z-index 5 */
+    }
+
+    .image-link img {
+        width: 40%;
+        height: auto;
+        position: absolute; /* Posiciona las imágenes en el mismo lugar */
+        top: 0;
+        left: 0;
+        transition: opacity 0.3s ease;
+        
+    }
+
+    .image-link img.hover {
+        opacity: 0; /* Oculta la imagen normal al hacer hover */
+    }
+</style>
+</head>
+<body>
+
+
+
+
